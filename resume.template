@@ -293,9 +293,6 @@
                     {{#if $first}}
                       Awards
                     {{/if}}
-                    {{#if title}}
-                      <p>{{title}}</p>
-                    {{/if}}
                     {{#if date}}
                       <p>{{date}}</p>
                     {{/if}}
@@ -303,6 +300,9 @@
                   <div class="content-text work-listing">
                     {{#if awarder}}
                       <strong><p class="heading">{{awarder}}</p></strong>
+                    {{/if}}
+                    {{#if title}}
+                      <p>{{title}}</p>
                     {{/if}}
                     {{#if summary}}
                       <p class="highlight">{{summary}}</p>
