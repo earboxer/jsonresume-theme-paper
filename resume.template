@@ -361,6 +361,32 @@
             </section>
           {{/if}}
 
+          {{#if resume.references.length}}
+            {{#foreach resume.references}}
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat big-text">
+                    {{#if $first}}
+                      References
+                    {{/if}}
+                  </div>
+                  <div class="content-text skills-listing">
+                    {{#if name}}
+                      <p>
+                        <strong>{{name}}</strong>
+                      </p>
+                    {{/if}}
+                    {{#if reference}}
+                      <p>
+                        {{reference}}
+                      </p>
+                    {{/if}}
+                  </div>
+                </div>
+              </section>
+            {{/foreach}}
+          {{/if}}
+
         </div>
     </article>
   </div>
