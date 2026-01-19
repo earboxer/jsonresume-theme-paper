@@ -193,6 +193,8 @@
                       {{#if startDate}}
                         {{#if endDate}}
                           <p>{{startDate}} to {{endDate}}</p>
+                        {{else}}
+                          <p>{{startDate}} to Present</p>
                         {{/if}}
                       {{/if}}
                     </div>
@@ -229,6 +231,8 @@
                     {{#if startDate}}
                       {{#if endDate}}
                         <p>{{startDate}} to {{endDate}}</p>
+                      {{else}}
+                        <p>{{startDate}} to Present</p>
                       {{/if}}
                     {{/if}}
                   </div>
