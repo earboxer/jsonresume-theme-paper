@@ -238,12 +238,15 @@
                   </div>
                   <div class="content-text work-listing">
                     {{#if organization}}
-                      {{#if $first}}
-                        <p>
-                      {{else}}
-                         <p>
-                      {{/if}}
-                        <strong>{{organization}}</strong>
+                      <p>
+                        {{#if position}}
+                          <strong>{{position}}</strong> at
+                        {{/if}}
+                        {{#if url}}
+                          <strong><a href="{{url}}">{{organization}}</a></strong>
+                        {{else}}
+                          <strong>{{organization}}</strong>
+                        {{/if}}
                       </p>
                     {{/if}}
                     {{#if summary}}
