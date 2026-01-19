@@ -200,8 +200,8 @@
                     </div>
                     <div class="content-text work-listing education-listing">
                       {{#if institution}}
-                        {{#if $first}}
-                          <p style="margin-top:0;" class="heading">{{institution}}</p>
+                        {{#if url}}
+                          <p style="margin-top:0;" class="heading"><a href="{{url}}">{{institution}}</a></p>
                         {{else}}
                           <p style="margin-top:0;" class="heading">{{institution}}</p>
                         {{/if}}
