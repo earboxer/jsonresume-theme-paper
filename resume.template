@@ -284,6 +284,34 @@
             </section>
           {{/if}}
 
+          {{#if resume.certificates.length}}
+            {{#foreach resume.certificates}}
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat big-text">
+                    {{#if $first}}
+                      Certificates
+                    {{/if}}
+                    {{#if date}}
+                      <p>{{date}}</p>
+                    {{/if}}
+                  </div>
+                  <div class="content-text work-listing">
+                    {{#if issuer}}
+                      <strong><p class="heading">{{issuer}}</p></strong>
+                    {{/if}}
+                    {{#if name}}
+                      {{#if url}}
+                        <p><a href="{{url}}">{{name}}</a></p>
+                      {{else}}
+                        <p>{{name}}</p>
+                      {{/if}}
+                    {{/if}}
+                  </div>
+                </div>
+              </section>
+            {{/foreach}}
+          {{/if}}
 
           {{#if resume.awards.length}}
             {{#foreach resume.awards}}
